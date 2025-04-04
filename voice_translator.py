@@ -6,7 +6,7 @@ recognizer = speech_recognition.Recognizer()
 with speech_recognition.Microphone() as source:
     print("speak now")
     voice = recognizer.listen(source)
-    text = recognizer.recognize_google(voice, language="bg")
+    text = recognizer.recognize_google(voice, language="zh-CN")
     print(text)
 
 
